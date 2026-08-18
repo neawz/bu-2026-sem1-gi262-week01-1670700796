@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Workshop : MonoBehaviour
 {
-    
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -18,19 +18,30 @@ public class Workshop : MonoBehaviour
     public bool isSixOClock;
     public void As01_SyntaxIf()
     {
-        
+        Debug.Log("Knock knock!");
+        if (isSixOClock)
+        {
+            Debug.Log("The door opens.");
+        }
     }
 
     public string password;
     public void As02_StringComparisonExample()
     {
-        
+        if (password != "Moon")
+        {
+            Debug.Log("wrong password");
+        }
+        else if (password == "Moon")
+        {
+            Debug.Log("password is correct");
+        }
     }
 
     public int as03Number;
     public void As03_NumberComparisonExample()
     {
-
+        
     }
 
     public int as04Number;
